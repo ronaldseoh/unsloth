@@ -318,6 +318,7 @@ class FastBaseModel:
             tokenizer_name,
             padding_side = "right",
             token        = token,
+            max_pixels=768*28*28,
         )
         if hasattr(tokenizer, "tokenizer"):
             __tokenizer = tokenizer.tokenizer
